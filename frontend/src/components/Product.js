@@ -1,0 +1,24 @@
+import React from 'react'
+import Rating from './Rating';
+
+export default function Product(props) {
+    const {product} = props;
+    return (
+        <div>
+            <div key={product._id} className="card">
+                <a href={`/product/${product._id}`} >
+                    <img className="medium" src="./images/p1.jpg" alt="product"/>
+                </a>
+                <div className="card-body">
+                <a href={`/product/${product._id}`} >
+                        <h2>{product.name}</h2>
+                    </a>
+                    <Rating rating= {product.rating} numViews ={product.numViews}></Rating>
+                    <div className="price">
+                      BDT {product.price}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
