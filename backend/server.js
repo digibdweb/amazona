@@ -10,4 +10,8 @@ app.get('/',(req,res)=> {
     res.send("server is ready");
 });
 
+
 app.listen(port,console.log(`serverd at http://localhost:${port}`));
+
+
+
