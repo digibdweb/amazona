@@ -1,9 +1,10 @@
 {
   "name": "amazona",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,9 @@
     "url": "https://github.com/digibdweb/amazona/issues"
   },
   "homepage": "https://github.com/digibdweb/amazona#readme",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }
